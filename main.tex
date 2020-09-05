@@ -13,7 +13,7 @@
         \vspace*{1cm}
             
         \Huge
-        \textbf{Título del trabajo}
+        \textbf{Taller - Nociones de la memoria del computador}
             
         \vspace{0.5cm}
         \LARGE
@@ -21,7 +21,7 @@
             
         \vspace{1.5cm}
             
-        \textbf{Nombres y Apellidos del autor}
+        \textbf{Edgar Julián Cruz Buitrago}
             
         \vfill
             
@@ -38,52 +38,31 @@
 
 \tableofcontents
 
-\section{Sección introductoria}
-Esta es la primera sección, podemos agregar algunos elementos adicionales y todo será escrito correctamente. Más aún, si una palabra es demasiado larga y tiene que ser truncada, babel tratará de truncarla correctamente dependiendo del idioma.
+\section{Defina que es la memoria del computador}
+Es el dispositivo donde se almacena durante algún periodo de tiempo datos informáticos; estos datos pueden ser informacíón, instrucciones, archivos, programas, etc.
+Comunmente cuando se refiere a <<memoria>> se habla de un almacenamiento rápido pero temporal.
 
-\section{Sección de contenido} \label{contenido}
+\section{Mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo} 
+\begin{itemize}
+    \item Memoria Cache, es la memoria interna de la CPU en la que son almacenadas las instrucciones y la información que es accedida de forma recurrente.
+    \item Memoria RAM (Random Access Memory - Memoria de acceso aleatorio) es la memoria donde se procesan temporalmente las instrucciones, archivos y programas en un computador, es utilizada por la CPU para realizar sus procesamientos.
+    \item Memoria Virtual, es una separación de espacio en el disco duro para almacenar los datos de la memoria RAM que llevan tiempo sin ser usados.
+\end{itemize}
+\section{Describa la manera como se gestiona la memoria en un computador} 
+Cada instrucción en un computador tiene un ciclo de procesamiento que cumple los siguientes pasos:
+\begin{itemize}
+    \item Las señales electricas que pueden venir de un periferico o un componente interno del computador, son instrucciones que se almacenan en la memoria.
+    \item El controlador de memoria avisa a la CPU que tiene una instrucción por ser procesada.
+    \item La CPU solicita acceso a la instrucción.
+    \item La instrucción es eliminada de memoria.
+    \item La CPU ejecuta la instrucción para lo cual seguramente deberá almacenar nuevas instrucciones en memoria, por ejemplo para cargar un archivo, abrir un programa o activar algun periferico.
+    \item En la memoria se mantendrán los datos informaticos mientras se esten utilizando, por eso es que las instrucciones son eliminadas de memoria una vez son ejecutadas, pero los archivos permacerán en memoria hasta que sean cerrados.
+    \item Cuando se da la instrucción de guardado de un archivo, se realiza una copia en el disco duro.
+    \item Cuando se la de instrucción de cierre de un archivo o un programa, se elimina de la memoria.
+\end{itemize}
 
-Esta sección es para ver qué pasa con los comandos 
-que definen texto
+\section{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?} 
 
-El paquete también agrega un comportamiento especial 
-a <<estas marcas para hacer citas textuales>> tal como 
-lo indican las reglas de la RAE. \cite{dirac}
-
-\begin{lstlisting}
-#include <stdio.h>
-#define N 10
-/* Block
- * comment */
-
-int main()
-{
-    int i;
-
-    // Line comment.
-    puts("Hello world!");
-    
-    for (i = 0; i < N; i++)
-    {
-        puts("LaTeX is also great for programmers!");
-    }
-
-    return 0;
-}
-\end{lstlisting}
-
-A continuación se presenta el logo de C++ Figura (\ref{fig:cpplogo})
-
-\begin{figure}[h]
-\includegraphics[width=4cm]{cpplogo.png}
-\centering
-\caption{Logo de C++}
-\label{fig:cpplogo}
-\end{figure}
-
-En la sección de teoremas (\ref{contenido})
-
-\section{Conclusión} \label{conclulsion}
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
